@@ -1,0 +1,43 @@
+name: Kits
+main: com.maxb00.Main
+version: 1.0
+description: >
+             Kits plugin.
+commands:
+  pvp:
+    description: PvP kit
+  mage:
+    description: Mage kit
+  archer:
+    description: Archer Kit
+  undead:
+    description: Regenerating Kit
+  joker:
+    description: Ha ha!
+  ci:
+    description: Clears Inventory
+    aliases: [clear]
+  c:
+    description: Gives you a compass
+    aliases: [compass]
+  rainbow:
+    description: Starts rainbow Armor
+    aliases: [armorColor,ac]
+  cancelarmor:
+    description: Ends rainbow armor
+    aliases: [rainbowx]
+  hat:
+    description: Get desired hat (Glass, Bedrock)
+  kitup:
+    description: Upgrades kit.
+permissions:
+  maxb00.*:
+    default: op
+    description: Give players with op everything by default
+    children:
+            maxb00.lobby.rainbow: true
+            maxb00.kit.undead: true
+            maxb00.kit.brute: true
+            maxb00.kit.archer: true
+            maxb00.kit.pvp: true
+            maxb00.kit.mage: true
